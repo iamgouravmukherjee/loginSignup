@@ -1,0 +1,17 @@
+<div class="container">
+   <div class="panel">
+      <div class="state"><br><i class="fa fa-unlock-alt"></i><br>
+         <h1>Login</h1>
+      </div>
+      <div class="form">
+         <form (submit)="handleSumbit($event)">
+            <input placeholder='Username' type="text" required #username (input)="handleInput(username,'username')">
+            <input placeholder='Password' type="password" required #password (input)="handleInput(password,'password')">
+            <button class="login">Login</button>
+         </form>
+      </div> 
+      <div class="fack">
+         <a routerLink="/signup"><i class="fa fa-question-circle"></i>New user? Signup</a>
+      </div>
+   </div>
+</div>
